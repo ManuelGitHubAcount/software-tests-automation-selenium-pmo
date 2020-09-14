@@ -16,7 +16,7 @@ public class SiteResources {
 	public SiteResources() {
 		try {
 			prop = new Properties();
-			FileInputStream fis = new  FileInputStream("C:\\Users\\MREYES\\eclipse-workspace\\focusservices\\src\\main\\java\\focusservices\\config\\config.properties");
+			FileInputStream fis = new  FileInputStream("./src/main/java/focusservices/config/config.properties");
 			prop.load(fis);
 			sBrowserName = prop.getProperty("browser");
 			sURLSite = prop.getProperty("url");
