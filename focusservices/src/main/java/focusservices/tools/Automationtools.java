@@ -3,6 +3,7 @@ package focusservices.tools;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -100,4 +101,20 @@ public class Automationtools {
 	public void iWait() {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
+	
+	public void scrollIntoViewClick(WebElement element) { 
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoViewIfNeeded(true);", element);
+        js.executeScript("arguments[0].click();", element);
+    }
+	
+	public void scrollIntoView(WebElement element) { 
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+	
+	public void scrollIntoViewIfNeeded(WebElement element) { 
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoViewIfNeeded(true);", element);
+    }
 }
