@@ -1,0 +1,47 @@
+Script should be having the following things
+Case 1 => Open Chrome Browser
+Case 2 => Go to www.google.com
+Case 3 => Type in Google’s search “Focus Services”
+Case 4 => Click on “Search button”
+Case 5 => Verify the https://www.focusservices.com URL exists in the search
+Case 6 => Click on that page
+Case 7 => Scroll down to the bottom of the page
+Case 8 => Verify the “Now Hiring” button exists into this page
+Case 9 => Click on “Locations” Tab
+Case 10 => Locate North America Link. Do an assert on this link
+Case 11 => Click on Central America location
+Case 12 => Validate “El Salvador & Nicaragua” title is displayed on the page
+Case 13 => Click on Asia Location. Verify if exist the “Bacolod City, Philippines” text block
+
+---=> TO VALIDATE EACH OF THE CASES, RUN THE TEST CASES IN THE FOLLOWING ORDER <=---
+
+=> CASE 1 and CASE 2
+=> TestCase NAME: => GoToGoogle_Test.java
+
+=> CASE 3 and CASE 4
+=> TestCase NAME: => TypeInGoogleSearch_Test.java
+
+=> CASE 5 and CASE 6
+=> TestCase NAME: => VerifyTheURLExists_Test.java
+
+=> CASE 7
+=> TestCase NAME: => ScrollDownToBottomPage_Test.java
+
+=> CASE 8
+=> TestCase NAME: => verifyNowHiringBtnExists_Test.java
+
+=> CASE 9
+=> TestCase NAME: => ClickOnLocationsTab_Test.java
+
+=> CASE 10
+=> TestCase NAME: => LocateNorthAmericaLink_Test.java
+
+=> CASE 11
+=> TestCase NAME: => ClickOnCentralAmericalocation_Test.java
+
+=> CASE 12
+=> TestCase NAME: => ValidateElSalNicTitleIsDisplayed_Test.java
+
+=> CASE 13
+=> TestCase NAME: => ClickonAsiaLocation_Test.java
+=> TestCase NAME: => VerifyBacoCityPhilippinesTextBlockExist_Test.java
