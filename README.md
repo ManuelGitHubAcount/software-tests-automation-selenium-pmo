@@ -9,7 +9,7 @@ to the console_
 _These instructions will allow you to get a copy of the project running on your local machine for testing purposes._
 
 ### Pre-requisites 📋
-* _Focus Services Project Version: 1.0 (https://github.com/ManuelGitHubAcount/software-test-automation/)_.
+* _Focus Services Project Version: 2.0 (https://github.com/ManuelGitHubAcount/software-tests-automation-selenium-pmo)_.
 * _Eclipse IDE Version: 2020-06 (https://www.eclipse.org/downloads/)_.
 * _JDK Version: 1.8.0 (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)_.
 * _Junit Version: 5.4.0 (https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter/5.4.0)_.
@@ -43,7 +43,7 @@ _For these Junit, Selenium Server and ChromeDriver tools, it is not necessary to
 _To run the project and validate the test cases, do the following._
 ```
 Go to Eclipse IDE and,
-In the project, browse the project folders until you find FocusRunTestMethodsClass.class.
+In the project, browse the project folders until you find focusservices.tests.
 Path: focusservices -> src/test/java -> focusservices.tests -> ...
 Then, just Right click on the Test Case -> Run As -> Junit Test.
 The application will start to execute each of the test cases. Regardless of the results, you will get a message on the console.
