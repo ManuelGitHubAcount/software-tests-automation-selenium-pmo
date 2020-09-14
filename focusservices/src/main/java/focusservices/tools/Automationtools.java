@@ -21,7 +21,7 @@ public class Automationtools {
 	
 	public Boolean openBrowser(String sBrowserType) {
 		if(sBrowserType.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\MREYES\\eclipse-workspace\\focusservices\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","./src/test/resources/chrome/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		driver.manage().window().maximize();
